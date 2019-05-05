@@ -38,8 +38,8 @@ public class MyFirstepdef {
 	}
 	
 	
-	@Then("^user checks (\\d+) the status code$")
-	public void user_checks_the_status_code(int expStatusCode){
+	@Then("^use checks the staus code (\\d+)$")
+	public void use_checks_the_staus_code(int expStatusCode){
 		//Get status code from the response
 		//int ExpCode = Integer.parseInt(expStatusCode);
 		int statusCode = resp.getStatusCode();
@@ -56,18 +56,19 @@ public class MyFirstepdef {
 		resp.then().assertThat().body("MRData.CircuitTable.Circuits.circuitId",hasSize(20));
 	}
 	
-	@Then("user checks \"([^\"]*)\" value")
-	public void user_checks_circuitId_value(String expectedcircuitValue){
-		System.out.println("verify single string");
-		String actualCircuitValue = resp.getBody().jsonPath().getString("MRData.CircuitTable.Circuits.circuitId[0]");
-		Assert.assertEquals(expectedcircuitValue, actualCircuitValue);
-		System.out.println("verify single string");
-	}
+//	@Then("user checks \"([^\"]*)\" value")
+//	public void user_checks_circuitId_value(String expectedcircuitValue){
+//		System.out.println("verify single string");
+//		String actualCircuitValue = resp.getBody().jsonPath().getString("MRData.CircuitTable.Circuits.circuitId[0]");
+//		Assert.assertEquals(expectedcircuitValue, actualCircuitValue);
+//		System.out.println("verify single string");
+//	}
 	
 	
 	@Then("^user checks at path \"([^\"]*)\" with the \"([^\"]*)\" value$")
 	public void user_checks_at_path_with_the_value(String path, String expValue){
 		String actualCircuitValue = resp.getBody().jsonPath().getString(path);
+		System.out.println(actualCircuitValue);
 		Assert.assertEquals(expValue, actualCircuitValue);
 	}
 	

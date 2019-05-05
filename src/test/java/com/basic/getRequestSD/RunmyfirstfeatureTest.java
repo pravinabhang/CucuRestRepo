@@ -8,7 +8,10 @@ import cucumber.api.junit.Cucumber;
 
 	
 @RunWith(Cucumber.class)
-@CucumberOptions()
+@CucumberOptions(
+		monochrome=true,
+		features={"src/test/resources/com/basic/getRequestFF/GetRequestTesting.feature/"}
+		)
 		
 
 public class RunmyfirstfeatureTest {
