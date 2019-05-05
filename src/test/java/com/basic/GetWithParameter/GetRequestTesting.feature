@@ -1,4 +1,4 @@
-Feature: First Rest Assured test
+Feature: First Rest Assured test getRequest1
 
 
 Scenario: Test my Get Method

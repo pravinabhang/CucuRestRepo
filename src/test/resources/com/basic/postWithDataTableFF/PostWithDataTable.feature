@@ -1,7 +1,7 @@
 Feature: First Rest Assured test POST 
 
 
-Scenario: Test my POST request test 
+Scenario: Test my POST request test DataTable
 Given  user hit the post request with "Tom" name
 Then user validate followind data
 	|param			|Value			|

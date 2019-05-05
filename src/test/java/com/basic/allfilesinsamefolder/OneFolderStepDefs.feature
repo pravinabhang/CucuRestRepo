@@ -1,4 +1,4 @@
-Feature: Facebook login
+Feature: Facebook login11
 As a fb user, I want to enter username and pwd 
 
 Scenario: validate fb login Scenario1

@@ -1,7 +1,7 @@
 Feature: First Rest Assured test POST 
 
 
-Scenario: Test my POST request test 
+Scenario: Test my POST request test TextFile
 Given  user hit the post request from text file
 Then user validate the id is not null 
 

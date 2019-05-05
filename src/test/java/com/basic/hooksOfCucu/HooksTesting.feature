@@ -1,4 +1,4 @@
-Feature: First Rest Assured test
+Feature: First Rest Assured test Get2
 
 
 Scenario: Test my Get Method
